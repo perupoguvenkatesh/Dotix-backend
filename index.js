@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 // Use local webhook test endpoint for development
 let PORT=process.env.PORT || 3001
-let WEBHOOK_URL =process.env.WEBHOOK_URL || "https://dotix-backend-1asq.onrender.com/webhook-test";
+let WEBHOOK_URL =process.env.WEBHOOK_URL || "https://dotix-backend-9r2r.onrender.com/webhook-test";
 
 /**
 POST /jobs
