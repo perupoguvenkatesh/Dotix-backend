@@ -9,7 +9,8 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Use local webhook test endpoint for development
-const WEBHOOK_URL =process.env.WEBHOOK_URL || "https://dotix-backend-1asq.onrender.com/webhook-test";
+let PORT=process.env.PORT || 3001
+let WEBHOOK_URL =process.env.WEBHOOK_URL || "https://dotix-backend-1asq.onrender.com/webhook-test";
 
 /**
 POST /jobs
@@ -143,6 +144,6 @@ app.post('/webhook-test', (req, res) => {
   res.json({ received: true, at: new Date().toISOString() });
 });
 
-app.listen(3001, () => {
+app.listen(PORT, () => {
   console.log("Server running on http://localhost:3001");
 });
