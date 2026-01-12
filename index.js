@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Use local webhook test endpoint for development
-const WEBHOOK_URL = "http://localhost:3001/webhook-test";
+const WEBHOOK_URL = "https://dotix-backend-1asq.onrender.com/webhook-test";
 
 /**
 POST /jobs
